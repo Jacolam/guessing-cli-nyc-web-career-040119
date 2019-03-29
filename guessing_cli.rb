@@ -1,10 +1,11 @@
 require 'pry'
 
 def run_guessing_game
-  number = rand 1..6
-  puts "Guess a number between 1 and 6."
-  guess = gets.chomp
+  guess = ""
   while guess
+    puts "Guess a number between 1 and 6."
+    guess = gets.chomp
+    number = rand 1..6
     if guess.to_i == number
       puts "You guessed the correct number!"
     elsif guess == "exit"
