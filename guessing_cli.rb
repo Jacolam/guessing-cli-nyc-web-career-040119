@@ -18,7 +18,7 @@
 # end 
 
 def run_guessing_game
-  while input
+  while guess
     puts "Guess a number between 1 and 6."
     guess = gets.chomp
     random = rand 1..6
