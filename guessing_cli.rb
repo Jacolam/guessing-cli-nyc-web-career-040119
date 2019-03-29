@@ -1,11 +1,9 @@
 # require 'pry'
-
 def run_guessing_game
-guess = ""
 number = rand 1..6
 puts "Guess a number between 1 and 6."
-guess = gets.chomp  # guess is currently a  string
 while guess
+guess = gets.chomp 
 if number == guess.to_i
   puts "You guessed the correct number!"
   break
@@ -18,8 +16,6 @@ else
 end 
 end 
 end 
-
-# def run_guessing_game
 #   input = ""
 #   while input
 #     puts "Guess a number between 1 and 6."
