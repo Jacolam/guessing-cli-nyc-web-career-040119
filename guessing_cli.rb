@@ -8,13 +8,11 @@ while guess
 guess = gets.chomp 
 if number == guess.to_i
   puts "You guessed the correct number!"
-  break
 elsif guess == "exit"
       puts "Goodbye!"
       break
 else 
   puts "The computer guessed #{number}"
-  break
 end 
 end 
 end 
@@ -32,7 +30,6 @@ end
 #       break
 #     else
 #       puts "The computer guessed #{random}."
-      
 #     end
 #   end 
 # end
