@@ -20,12 +20,11 @@
 def run_guessing_game
   while input
     puts "Guess a number between 1 and 6."
-    input = gets.chomp
-    random = rand(1..6)
-    if input.to_i == random
+    guess = gets.chomp
+    random = rand 1..6
+    if guess.to_i == random
       puts "You guessed the correct number!"
-    
-    elsif input == "exit"
+    elsif guess == "exit"
       puts "Goodbye!"
       break
     else
