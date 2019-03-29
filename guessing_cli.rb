@@ -13,7 +13,7 @@ elsif guess == "exit"
       puts "Goodbye!"
       break
 else 
-  puts "The computer guessed <#{number}>"
+  puts "The computer guessed #{number}"
   break
 end 
 end 
